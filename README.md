@@ -1772,7 +1772,7 @@ If give_tokens is set, it is a gift and it does not alter the capacity
 Example:
 
 ```node
-const {openChannel} = require('ln-service');  
+const {openChannel} = require('ln-service');
 const publicKey = 'publicKeyHexString';
 const tokens = 1000000;
 await openChannel({lnd, local_tokens: tokens, partner_public_key: publicKey});
@@ -3623,13 +3623,13 @@ Environment variables:
     export LNSERVICE_SECRET_KEY="REPLACE!WITH!SECRET!KEY!"
 
 .env file:
-    
+
     GRPC_SSL_CIPHER_SUITES='HIGH+ECDSA'
     LNSERVICE_CHAIN='bitcoin'
     LNSERVICE_LND_DIR='/PATH/TO/.lnd/'
     LNSERVICE_NETWORK='testnet'
     LNSERVICE_SECRET_KEY='REPLACE!WITH!SECRET!KEY!'
-    
+
 Setting environment variables in Linux:
 
 - Edit `.bashrc` or `~/.profile`

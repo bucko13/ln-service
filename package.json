@@ -6,6 +6,7 @@
   "dependencies": {
     "@datastructures-js/priority-queue": "1.0.2",
     "@grpc/proto-loader": "0.5.1",
+    "@ln-zap/proto-loader": "^0.5.1",
     "async": "3.1.0",
     "asyncjs-util": "1.1.2",
     "basicauth-middleware": "3.1.0",
