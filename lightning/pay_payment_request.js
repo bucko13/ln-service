@@ -117,7 +117,7 @@ module.exports = (args, cbk) => {
             return cbk([503, 'ExpectedPaymentRouteHops']);
           }
 
-          if (!res.payment_route.total_fees) {
+          if (res.payment_route.total_fees === undefined) {
             return cbk([503, 'ExpectedPaymentFeesPaid']);
           }
 
